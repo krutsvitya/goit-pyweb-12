@@ -5,8 +5,8 @@ from typing import Union
 from fastapi import Depends, HTTPException
 from sqlalchemy.orm import Session
 from jose import JWTError, jwt
-from contacts.models import User
-from contacts.database import SessionLocal
+from .models import User
+from .database import SessionLocal
 
 SECRET_KEY = "your_secret_key"
 ALGORITHM = "HS256"

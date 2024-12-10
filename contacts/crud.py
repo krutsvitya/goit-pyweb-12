@@ -1,6 +1,6 @@
 from sqlalchemy.orm import Session
-from contacts import models
-from contacts import schemas
+from . import models
+from . import schemas
 
 
 def get_contact(db: Session, contact_id: int):
